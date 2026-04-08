@@ -2,21 +2,26 @@
 
 ![stack](https://img.shields.io/badge/stack-Python-1f6feb) ![focus](https://img.shields.io/badge/focus-Python-0f766e) ![status](https://img.shields.io/badge/status-ativo-2ea44f)
 
-Repositório Python com estudos e exercícios da Rocketseat. Este repositório documenta uma implementação voltada a projeto de software, com base principal em Python e um resumo organizado para deixar escopo, tecnologias e estágio atual claros logo na primeira leitura.
+Repositório Python com estudos e exercícios da Rocketseat. Este repositório documenta uma implementação voltada a projeto de software, com base principal em Python, destacando decisões de implementação, tecnologias adotadas e forma de execução para análise técnica do projeto.
 
 ## Visão geral
 
-Projeto desenvolvido com foco em projeto e stack principal em Python. Este repositório apresenta uma solução relacionada a python, rocketseat, study, destacando o contexto do problema, a direção técnica adotada e a forma recomendada de executar ou avaliar a entrega.
+Projeto desenvolvido com foco em projeto e stack principal em Python. Este repositório apresenta uma solução relacionada a python, rocketseat, study, com ênfase em escopo técnico, estrutura de implementação e pontos úteis para leitura de código, execução local e avaliação da abordagem adotada.
 
-## O que este projeto entrega
+## Contexto técnico
+
+- Objetivo técnico: Repositório Python com estudos e exercícios da Rocketseat..
+- Stack principal identificada: Python.
+
+## Stack principal
+
+- Python
+
+## Arquitetura e implementação
 
 - Escopo principal: Repositório Python com estudos e exercícios da Rocketseat.
 - Stack central: Python.
 - Temas centrais trabalhados neste repositório: python, rocketseat, study.
-
-## Stack e execução
-
-- Python
 
 ## Como executar
 
