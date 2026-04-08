@@ -1,66 +1,33 @@
-# Rocketseat Python
+# rocketseat-py
 
-Repositório com pequenos projetos Python usados no curso da Rocketseat. Contém exercícios de introdução e POO organizados em pastas separadas.
+![stack](https://img.shields.io/badge/stack-Python-1f6feb) ![focus](https://img.shields.io/badge/focus-Python-0f766e) ![status](https://img.shields.io/badge/status-ativo-2ea44f)
 
-## Estrutura
+Repositório Python com estudos e exercícios da Rocketseat.
 
-- `curso_python_modulo_introducao/` - Projeto com exercícios de introdução (ex.: `todoist.py` e app com controller, model e view).
-- `curso_python_modulo_poo/` - Projetos de Programação Orientada a Objetos (POO), incluindo um jogo de batalha simples.
+## Visao geral
 
-## Como usar
+Projeto com foco em projeto usando Python. Ele destaca python, rocketseat, study de forma direta para facilitar a leitura de visitantes e recrutadores.
 
-1. Clone o repositório para sua máquina.
-2. (Opcional) Crie um ambiente virtual Python:
+## Stack
 
-```powershell
-python -m venv .venv; .\.venv\Scripts\Activate
-```
+- Python
 
-3.Execute os scripts diretamente com Python. Exemplos:
+## Destaques
 
-```powershell
-python curso_python_modulo_introducao\todoist.py
-python curso_python_modulo_poo\batalhar_games\main.py
-```
+- Repositório Python com estudos e exercícios da Rocketseat.
+- Temas centrais: python, rocketseat, study.
 
-## Boas práticas
+## Como executar
 
-# rocketseat-_python_I
+- python -m venv .venv
+- .venv\Scripts\activate
+- pip install -r requirements.txt
 
-Repositório com pequenos projetos Python usados no curso da Rocketseat. Contém exercícios de introdução e exemplos de POO organizados em pastas separadas.
+## Status
 
-## Estrutura
+- Estado atual: ativo.
+- Repositorio pronto para revisao tecnica e navegacao rapida.
 
-- `curso_python_modulo_introducao/` — exercícios introdutórios e um exemplo de app simples (MVC): `controller.py`, `model.py`, `view.py`, `db.py` e o script `todoist.py`.
-- `curso_python_modulo_poo/` — exemplos de Programação Orientada a Objetos e um pequeno jogo em `batalhar_games/`.
+## Contato
 
-## Como usar
-
-1. Clone o repositório para sua máquina.
-2. (Opcional) Crie e ative um ambiente virtual Python:
-
-```powershell
-python -m venv .venv; .\.venv\Scripts\Activate
-```
-
-3. Execute os scripts diretamente com Python. Exemplos:
-
-```powershell
-python curso_python_modulo_introducao\todoist.py
-python curso_python_modulo_poo\batalhar_games\main.py
-```
-
-## Boas práticas
-
-- Use um ambiente virtual.
-- Não comite arquivos gerados pelo Python (`__pycache__`, arquivos `.pyc`) nem suas credenciais.
-
-## Contribuindo
-
-Veja `CONTRIBUTING.md` para orientações de contribuição.
-
-## Licença
-
-Este projeto está licenciado sob a Licença MIT — veja o arquivo `LICENSE` para detalhes.
-
-## Licença
+Se quiser conversar sobre este projeto, fale comigo no [LinkedIn](https://www.linkedin.com/in/maxsuelOliveiradev/) ou veja mais projetos no [GitHub](https://github.com/MaxsuelOliveira).
