@@ -1,57 +1,33 @@
-# 🚀 Rocketseat Python
+# rocketseat-py
 
-Repositório com pequenos projetos e exercícios desenvolvidos durante o **curso de Python da Rocketseat**.  
-Contém exemplos práticos de **introdução à linguagem** e **Programação Orientada a Objetos (POO)**, organizados em módulos separados.
+![stack](https://img.shields.io/badge/stack-Python-1f6feb) ![focus](https://img.shields.io/badge/focus-Python-0f766e) ![status](https://img.shields.io/badge/status-ativo-2ea44f)
 
----
+Repositório Python com estudos e exercícios da Rocketseat.
 
-## 🗂️ Estrutura do Repositório
+## Visao geral
 
-📁 **`curso_python_modulo_introducao/`**  
-Projetos e exercícios introdutórios de Python, incluindo:  
-- `todoist.py` — app simples de tarefas.  
-- Estrutura MVC com `controller.py`, `model.py`, `view.py` e `db.py`.
+Projeto com foco em projeto usando Python. Ele destaca python, rocketseat, study de forma direta para facilitar a leitura de visitantes e recrutadores.
 
-📁 **`curso_python_modulo_poo/`**  
-Exemplos e desafios de POO, com destaque para:  
-- `batalhar_games/` — mini jogo de batalha orientado a objetos.  
+## Stack
 
-## ⚙️ Como Usar
+- Python
 
-1️⃣ **Clone o repositório:**
-```bash
-git clone https://github.com/seu-usuario/rocketseat-python.git
-cd rocketseat-python
-2️⃣ (Opcional) Crie e ative um ambiente virtual:
+## Destaques
 
-powershell
-Copiar código
-python -m venv .venv; .\.venv\Scripts\Activate
-ou no Linux/macOS:
+- Repositório Python com estudos e exercícios da Rocketseat.
+- Temas centrais: python, rocketseat, study.
 
-bash
-Copiar código
-python3 -m venv .venv && source .venv/bin/activate
-3️⃣ Execute os scripts:
+## Como executar
 
-bash
-Copiar código
-python curso_python_modulo_introducao/todoist.py
-python curso_python_modulo_poo/batalhar_games/main.py
-```
+- python -m venv .venv
+- .venv\Scripts\activate
+- pip install -r requirements.txt
 
-## 🧠 Boas Práticas
-✅ Use sempre um ambiente virtual (venv).
-✅ Evite commitar arquivos automáticos (__pycache__, .pyc, .env).
-✅ Escreva código limpo e legível.
-✅ Mantenha o repositório organizado em módulos.
+## Status
 
-## 🤝 Contribuindo
-Quer contribuir? Ótimo!
-Veja o arquivo CONTRIBUTING.md para orientações sobre como enviar PRs, abrir issues e sugerir melhorias.
+- Estado atual: ativo.
+- Repositorio pronto para revisao tecnica e navegacao rapida.
 
-## 📄 Licença
-Este projeto está licenciado sob a Licença MIT.
-Consulte o arquivo LICENSE para mais detalhes.
+## Contato
 
-🧑‍💻 Desenvolvido com 💜 por Maxsuel David .
+Se quiser conversar sobre este projeto, fale comigo no [LinkedIn](https://www.linkedin.com/in/maxsuelOliveiradev/) ou veja mais projetos no [GitHub](https://github.com/MaxsuelOliveira).
