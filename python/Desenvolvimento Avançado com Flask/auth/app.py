@@ -70,7 +70,7 @@ def create_user():
         if user :
             return jsonify({"message" : "Usuário já registrado"}), 401
         
-        user = User(username=username, password=password)
+        user = User(username=username, password=password, role="user")
         db.session.add(user)
         db.session.commit()
         return jsonify({"message" : "Usuario cadastrado com sucesso."})
@@ -103,6 +103,10 @@ def update_user(id_user):
 
     user = User.query.get(id_user)
     password = data.get("password")   
+          
+    if id_user != current_user.id and current_user.role == "user":
+        return jsonify({"message" : "Apenas administradores."}), 403
+         
      
     if user and password :
         user.password = password  # type: ignore
@@ -119,6 +123,9 @@ def update_user(id_user):
 def delete_user(id_user):
     user = User.query.get(id_user)
     
+    if current_user.role != "admin" : 
+        return jsonify({"message" : "Apenas administradores"}) , 403
+        
     if current_user.id == id_user :
         return jsonify({"message" : "Voce nao pode deletar o seu login."})
     
@@ -135,9 +142,9 @@ if __name__ == '__main__':
         db.create_all()
         
         # Caso nao exista o usuario admin ele cria !
-        if not User.query.filter_by(username="admin").first():
-            admin = User(username="admin", password="123456")
-            db.session.add(admin)
-            db.session.commit()
+        # if not User.query.filter_by(username="admin").first():
+        #     admin = User(username="admin", password="123456", role="admin")
+        #     db.session.add(admin)
+        #     db.session.commit()
 
     app.run(debug=True)
