@@ -1,3 +1,4 @@
+import bcrypt
 from flask import Flask, request, jsonify
 from models.users import User
 from database import db
@@ -37,7 +38,7 @@ def login():
     if username and password:
         user  = User.query.filter_by(username=username).first()
         
-        if user and user.password == password:
+        if user and bcrypt.checkpw(str.encode(password) , str.encode(user.password)):
             login_user(user)
             return jsonify({"message": "Login bem-sucedido", "user": {"id": user.id, "username": user.username}}), 200
 
@@ -66,11 +67,12 @@ def create_user():
     if username and password:
         
         # Verificando se existe usuário antes de cadastrar
+        hashed_password = bcrypt.hashpw(str.encode(password), bcrypt.gensalt())
         user = User.query.filter_by(username=username).first()
         if user :
             return jsonify({"message" : "Usuário já registrado"}), 401
         
-        user = User(username=username, password=password, role="user")
+        user = User(username=username, password=hashed_password, role="user")
         db.session.add(user)
         db.session.commit()
         return jsonify({"message" : "Usuario cadastrado com sucesso."})
@@ -87,6 +89,14 @@ def get_user_by_id(id_user):
         return jsonify({"username":user.username}), 200
     
     return jsonify({"message" : "Usuário nao encontrado."}), 404
+
+# ReadAll
+@app.route("/users/", methods=["GET"])
+@login_required
+def get_all_user():
+    users = User.query.all()
+    
+    return jsonify([user.to_dict() for user in users]), 200
 
 # Update
 @app.route("/user/<int:id_user>", methods=["PUT"])

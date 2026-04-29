@@ -9,7 +9,14 @@ class User(db.Model, UserMixin):
     password = db.Column(db.String(120), nullable=False)
     role = db.Column(db.String(80), nullable=False, default="user")
     
-    def __init__(self, username: str, password: str, role : str):
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "username": self.username,
+            "password": self.password
+        }
+    
+    def __init__(self, username: str, password: bytes, role : str):
         self.username = username
         self.password = password
         self.role = role
